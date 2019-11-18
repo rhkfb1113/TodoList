@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
+    <h1>To Do List</h1>
   </head>
   <body>
-    <h1>To Do List</h1>
-    <span>
+    <div id="contents">
       <ul id="myList"></ul>
-    </span>
+    </div>
     <form class="toDoForm" onsubmit="return false">
-      <input id="inputForm" type="text" onkeyup="enterkey()" />
-      <input id="button" type="button"  value="add" onclick="addList()" />
-      <input id="removeAllbutton" type="button" value="remove all" onclick="removeAll()" />
+      <!-- <input id="inputForm" type="text" onkeyup="enterkey()" /> -->
+      <input id="inputForm" type="text" class="form-control" placeholder="What will you do?" onkeyup="enterkey()" />
+      <button id="addButton" type="button" class="btn btn-primary" onclick="addList()">+</button>
+      <button id="removeAllButton" type="button" class="btn btn-danger" onclick="removeAll()">Delete All</button>
     </form>
     <script src="index.js"></script>
   </body>
