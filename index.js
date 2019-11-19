@@ -5,8 +5,10 @@ function addList() {
   const removeButton = document.createElement("button");
   const textnode = document.createTextNode(toDoInput);
   removeButton.className = "btn btn-warning";
-  removeButton.style.cssText = "font-size: 10px; font-weight: 900; margin-left: 30px; margin-top: -1px; padding: 5px";
-  node.style.cssText = "font-size: 30x; margin-top: 3px; text-align: center; cursor: pointer;";
+  removeButton.style.cssText =
+    "font-size: 10px; font-weight: 900; margin-left: 30px; margin-top: -1px; padding: 5px";
+  node.style.cssText =
+    "font-size: 30x; margin-top: 3px; text-align: center; cursor: pointer;";
   node.appendChild(textnode);
   node.appendChild(removeButton).innerHTML = "Del";
   node.onclick = doneList;
@@ -28,7 +30,11 @@ function doneList() {
 }
 
 function removeAll() {
-  document.getElementById("myList").innerHTML = "";
+  if (confirm("전부 지울까요?")) {
+    document.getElementById("myList").innerHTML = "";
+  } else {
+    // Do nothing!
+  }
 }
 
 function enterkey() {

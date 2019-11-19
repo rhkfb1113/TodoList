@@ -17,10 +17,29 @@
       <ul id="myList"></ul>
     </div>
     <form class="toDoForm" onsubmit="return false">
-      <!-- <input id="inputForm" type="text" onkeyup="enterkey()" /> -->
-      <input id="inputForm" type="text" class="form-control" placeholder="What will you do?" onkeyup="enterkey()" />
-      <button id="addButton" type="button" class="btn btn-primary" onclick="addList()">+</button>
-      <button id="removeAllButton" type="button" class="btn btn-danger" onclick="removeAll()">Delete All</button>
+      <input
+        id="inputForm"
+        type="text"
+        class="form-control"
+        placeholder="뭘 할까요?"
+        onkeyup="enterkey()"
+      />
+      <button
+        id="addButton"
+        type="button"
+        class="btn btn-primary"
+        onclick="addList()"
+      >
+        +
+      </button>
+      <button
+        id="removeAllButton"
+        type="button"
+        class="btn btn-danger"
+        onclick="removeAll()"
+      >
+        Delete All
+      </button>
     </form>
     <script src="index.js"></script>
   </body>
