@@ -6,11 +6,11 @@ function addList() {
   const textnode = document.createTextNode(toDoInput);
   removeButton.className = "btn btn-warning";
   removeButton.style.cssText =
-    "font-size: 10px; font-weight: 900; margin-left: 30px; margin-top: -1px; padding: 5px";
+    "font-size: 10px; font-weight: 900; margin-top: -1px; margin-left: 5px; padding: 5px";
   node.style.cssText =
-    "font-size: 30x; margin-top: 3px; text-align: center; cursor: pointer;";
+    "font-family: 'Noto Serif KR', serif; font-size: 20px; margin-top: 3px; text-align: left; cursor: pointer;";
   node.appendChild(textnode);
-  node.appendChild(removeButton).innerHTML = "Del";
+  node.appendChild(removeButton).innerHTML = "삭제";
   node.onclick = doneList;
   removeButton.onclick = removeList;
   document.getElementById("myList").appendChild(node);

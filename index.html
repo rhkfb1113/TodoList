@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Noto+Serif+KR&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -10,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <h1>To Do List</h1>
+    <h1>투두리스트</h1>
   </head>
   <body>
     <div id="contents">
@@ -23,22 +24,15 @@
         class="form-control"
         placeholder="뭘 할까요?"
         onkeyup="enterkey()"
+        autocomplete="off"
       />
-      <button
-        id="addButton"
-        type="button"
-        class="btn btn-primary"
-        onclick="addList()"
-      >
-        +
-      </button>
       <button
         id="removeAllButton"
         type="button"
         class="btn btn-danger"
         onclick="removeAll()"
       >
-        Delete All
+        전부삭제
       </button>
     </form>
     <script src="index.js"></script>
